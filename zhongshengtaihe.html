@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <!-- 
+        文件作用：index.html - 网站的主页面文件
+        这是网站的入口文件，定义了整个页面的结构和内容
+        包含导航栏、各个内容区块（英雄区、关于我们、服务、团队、联系方式等）和页脚
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="公司官网 - 专业的企业服务提供商">
+    <title>中盛泰和 - 公司官网</title>
+    <!-- 引入外部样式表 -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <img src="date/公司logo.png" alt="雄安中晟泰合 Logo" class="brand-logo">
+                <div class="nav-brand-text">
+                    <h1>雄安中晟泰合</h1>
+                    <p class="brand-tagline">特种机器人 · 通用机器人技术</p>
+                </div>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">首页</a></li>
+                <li><a href="#overview" class="nav-link">公司概况</a></li>
+                <li><a href="#products" class="nav-link">产品序列</a></li>
+                <li><a href="#technology" class="nav-link">技术优势</a></li>
+                <li><a href="#team" class="nav-link">团队文化</a></li>
+                <li><a href="#milestones" class="nav-link">里程碑</a></li>
+                <li><a href="#contact" class="nav-link">联系我们</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 英雄区域（首页横幅） -->
+    <section id="home" class="hero">
+        <!-- 背景轮播（请在 `date/` 目录下添加 hero1.jpg hero2.jpg hero3.jpg 等图片） -->
+        <div class="hero-slideshow" aria-hidden="true">
+            <div class="slide" style="background-image: url('date/hero1.png')"></div>
+            <div class="slide" style="background-image: url('date/hero2.jpg')"></div>
+            <div class="slide" style="background-image: url('date/hero3.jpg')"></div>
+        </div>
+
+        <div class="hero-content">
+            <p class="hero-kicker">通用机器人技术 · 特种作业解决方案</p>
+            <h1 class="hero-title">雄安中晟泰合科技有限公司</h1>
+            <p class="hero-subtitle">以数据要素驱动的物理引擎，打造未来硅基生命最终形态</p>
+            <div class="hero-actions">
+                <a href="#overview" class="btn btn-primary">了解公司</a>
+                <a href="#contact" class="btn btn-outline">合作共创</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <h3>2025</h3>
+                    <p>成立年份</p>
+                </div>
+                <div class="stat">
+                    <h3>5 大</h3>
+                    <p>特种装备场景</p>
+                </div>
+                <div class="stat">
+                    <h3>∞</h3>
+                    <p>创新探索</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 公司概况 -->
+    <section id="overview" class="section">
+        <div class="container">
+            <h2 class="section-title">公司概况</h2>
+            <div class="overview-grid">
+                <div class="logo-card">
+                    <img src="date/公司logo.png" alt="雄安中晟泰合 Logo" class="logo-image">
+                    <div>
+                        <p class="label">公司名称</p>
+                        <h3>雄安中晟泰合科技有限公司</h3>
+                        <p class="label">成立时间</p>
+                        <p>2025 年 6 月 27 日</p>
+                        <p class="label">创始人</p>
+                        <p>何思吉 · 连续创业者 · 机器人领域国家级竞赛多项冠军</p>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <h3>公司背景与使命</h3>
+                    <p>立足雄安新区，以“如果说这个时代会有一批实在做事的人，我希望是从我们开始”作为初心，打造新一代特种机器人科技企业。</p>
+                    <ul>
+                        <li>使命（超越与守护）：以特种机器人技术守护危险环境，替代高风险岗位，推动社会智能化、生态化发展。</li>
+                        <li>愿景（和谐与共生）：构建人与机器人、人与自然的和谐共生生态，以数据要素驱动物理引擎，探索硅基生命的未来形态。</li>
+                        <li>行业定位：通用机器人技术 · 特种作业场景。</li>
+                    </ul>
+                </div>
+                <div class="quote-card">
+                    <p class="quote">“如果说这个时代会有一批实在做事的人，我希望是从我们开始，领着一批批人引领走向下一个周期。”</p>
+                    <p class="quote-author">—— 何思吉 · 创始人</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 核心产品与服务 -->
+    <section id="products" class="section section-gray">
+        <div class="container">
+            <h2 class="section-title">特种装备产品序列（超越与守护）</h2>
+            <p class="section-intro">以“源源 · 灵枢 · 神机 · 巨龙”四大产品序列为核心，针对地面、仓储、灾后、空中、水下五大场景打造特种机器人体系，满足 B 端客户定制化需求。</p>
+            <div class="product-matrix">
+                <div class="product-card">
+                    <span class="badge">01</span>
+                    <h3>城市地表与人行空间</h3>
+                    <p>巡检 / 末端配送，兼顾城市安全与民生服务，覆盖昼夜全天候任务。</p>
+                </div>
+                <div class="product-card">
+                    <span class="badge">02</span>
+                    <h3>仓储 / 物流室内</h3>
+                    <p>过道行驶 + 取放 / 牵引，面向智慧仓储的高效率搬运系统。</p>
+                </div>
+                <div class="product-card">
+                    <span class="badge">03</span>
+                    <h3>灾后瓦砾 / 管道检修</h3>
+                    <p>狭缝穿越与复杂接触，深入高危环境执行救援与巡检任务。</p>
+                </div>
+                <div class="product-card">
+                    <span class="badge">04</span>
+                    <h3>空中巡检 / 测绘</h3>
+                    <p>兼顾航程与悬停能力的空中平台，适配能源、交通等行业场景。</p>
+                </div>
+                <div class="product-card">
+                    <span class="badge">05</span>
+                    <h3>水下巡检 / 长航</h3>
+                    <p>低阻细长体设计，满足水下长航时巡检与维护需求。</p>
+                </div>
+            </div>
+            <div class="series-list">
+                <div class="series-item">
+                    <h4>源源</h4>
+                    <p>专注城市公共空间智能巡检与服务。</p>
+                </div>
+                <div class="series-item">
+                    <h4>灵枢</h4>
+                    <p>服务仓储物流与工业场景的自适应装备。</p>
+                </div>
+                <div class="series-item">
+                    <h4>神机</h4>
+                    <p>灾害应急、狭小空间作业的特种机器人平台。</p>
+                </div>
+                <div class="series-item">
+                    <h4>巨龙</h4>
+                    <p>空中 / 水下巡检与测绘的双域旗舰平台。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 技术优势 -->
+    <section id="technology" class="section">
+        <div class="container">
+            <h2 class="section-title">技术或创新优势（致真与实现）</h2>
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <h3>人工智能 · 国家级课题</h3>
+                    <p>依托国家级机器人赛事与课题经验，构建人机交互、感知与决策一体化能力，在信息采集、数据处理与闭环反馈上保持领先。</p>
+                </div>
+                <div class="tech-card">
+                    <h3>软件系统 · 数字孪生</h3>
+                    <p>自研全周期生命平台，覆盖数字孪生、仿真镜像与现实反馈，形成运营、运维、洞察合一的机器人操作系统。</p>
+                </div>
+                <div class="tech-card">
+                    <h3>硬件方案 · 新材料</h3>
+                    <p>掌握异构化并联机构、轻量化材料与氢能源方案，实现特种机构的耐用性、机动性与续航突破。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 解决方案 -->
+    <section id="solutions" class="section section-gray">
+        <div class="container">
+            <h2 class="section-title">解决的问题（精准与适用）</h2>
+            <div class="solutions-grid">
+                <div class="solution-card">
+                    <h3>危险环境的安全替代</h3>
+                    <p>在灾后救援、高危巡检、特种作业中替代人工，降低工伤风险，保障生命安全。</p>
+                </div>
+                <div class="solution-card">
+                    <h3>数字化 + 定制化</h3>
+                    <p>依据国家标准为 B 端客户提供定制化方案，实现高度自动化操作，节约时间与成本。</p>
+                </div>
+                <div class="solution-card">
+                    <h3>效率与生态兼顾</h3>
+                    <p>以数据驱动的智能系统提升生产效率，同时通过绿色能源方案推动生态化发展。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 团队与文化 -->
+    <section id="team" class="section section-gray">
+        <div class="container">
+            <h2 class="section-title">团队与文化</h2>
+            <div class="team-layout">
+                <div class="team-profile">
+                    <h3>创始团队</h3>
+                    <p>创始人何思吉，连续创业者，斩获数据要素大赛、中国机器人及人工智能大赛、“一带一路”金砖职业技能大赛、睿抗开发者大赛、国际先进水中机器人大赛等多项冠军，兼具技术研发与商业化落地能力。</p>
+                    <p>团队成员覆盖机器人工程、控制算法、材料科学、数字孪生、产业运营等核心领域。</p>
+                </div>
+                <div class="team-culture">
+                    <h3>团队文化（合作共赢 · 格物致知）</h3>
+                    <ul>
+                        <li>以使命驱动的合作共赢，强调跨学科共创。</li>
+                        <li>坚持格物致知的工程精神，尊重每一次迭代与打磨。</li>
+                        <li>倡导开放共享，与高校、科研机构保持深度合作。</li>
+                    </ul>
+                    <p class="label">顾问与合作伙伴</p>
+                    <p>对接多所国内顶尖高校与研究所，共建特种机器人研发联盟。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 成就与里程碑 -->
+    <section id="milestones" class="section">
+        <div class="container">
+            <h2 class="section-title">公司成就与里程碑</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <span class="timeline-date">2025 年 6 月</span>
+                    <p>公司在雄安新区成立，完成核心团队组建。</p>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-date">2025 年 12 月</span>
+                    <p>发布特种装备产品序列雏形，完成多场景实测。</p>
+                </div>
+                <div class="timeline-item">
+                    <span class="timeline-date">2026 年 3 月</span>
+                    <p>与行业头部客户启动联合试点，推动商业化落地。</p>
+                </div>
+            </div>
+            <div class="achievements-grid">
+                <div class="achievement-card">
+                    <h3>国家级奖项</h3>
+                    <p>数据要素大赛 · 中国机器人及人工智能大赛 · “一带一路”金砖职业技能大赛 · 睿抗开发者大赛 · 国际先进水中机器人大赛等冠军殊荣。</p>
+                </div>
+                <div class="achievement-card">
+                    <h3>认证体系</h3>
+                    <p>推进 CE / CR 9001 等国际、行业认证，确保产品在全球范围合规、安全。</p>
+                </div>
+                <div class="achievement-card">
+                    <h3>媒体与客户</h3>
+                    <p>与特种作业、能源、城市管理等领域客户合作，持续获得行业媒体关注与报道。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 企业文化与社会责任 -->
+    <section id="culture" class="section">
+        <div class="container">
+            <h2 class="section-title">企业文化与社会责任</h2>
+            <div class="culture-grid">
+                <div class="culture-card">
+                    <h3>企业文化（自强与协作）</h3>
+                    <p>坚持创新、客户导向、团队协同的价值观，鼓励大胆设想与务实落地并行。</p>
+                </div>
+                <div class="culture-card">
+                    <h3>社会责任（兼爱与和谐）</h3>
+                    <p>聚焦教育、环保、传统行业智能化改造，推动机器人技术惠及更广泛的社会群体。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系我们 -->
+    <section id="contact" class="section section-gray">
+        <div class="container">
+            <h2 class="section-title">联系我们</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h3>📍 地址</h3>
+                        <p>中国（河北）自由贸易试验区雄安片区 雄安高新区服务中心 620-066</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>📞 电话</h3>
+                        <p>座机：0312-660-0066</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>📧 邮箱</h3>
+                        <p>contact@xazsthtech.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>📱 社交媒体</h3>
+                        <p>公众号：中晟泰合Tech · 抖音：@ZSTH_Robotics</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>🕒 工作时间</h3>
+                        <p>周一至周五 09:00-18:00</p>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="您的姓名" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="您的邮箱" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="phone" placeholder="联系电话">
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" rows="5" placeholder="留言内容" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">提交留言</button>
+                </form>
+            </div>
+            <div class="cta-panel">
+                <p class="cta-text">吾之所愿、盛世繁华！</p>
+                <p>欢迎投资人、合作伙伴、客户与我们携手，共同引领特种机器人进入下一周期。</p>
+                <a href="#contact" class="btn btn-outline">立即联系</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>雄安中晟泰合</h3>
+                    <p>特种机器人 · 通用机器人技术 · 安全与未来的守护者</p>
+                </div>
+                <div class="footer-section">
+                    <h4>快速链接</h4>
+                    <ul>
+                        <li><a href="#overview">公司概况</a></li>
+                        <li><a href="#products">产品序列</a></li>
+                        <li><a href="#technology">技术优势</a></li>
+                        <li><a href="#contact">联系我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>更多资源</h4>
+                    <ul>
+                        <li><a href="#milestones">里程碑</a></li>
+                        <li><a href="#overview">公司概况</a></li>
+                        <li><a href="#contact">联系我们</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 雄安中晟泰合科技有限公司. 保留所有权利.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 引入JavaScript文件 -->
+    <script src="script.js"></script>
+</body>
+
+</html>
